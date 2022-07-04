@@ -1,4 +1,3 @@
-import React from 'react';
 import CompanyList from './CompanyList';
 
 function CompanyListScreen() {

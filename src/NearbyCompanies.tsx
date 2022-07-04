@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ICompany } from './CompanyItem';
+import { ICompany } from './model';
 
 function NearbyCompanies(props: { companies: ICompany[] }) {
   const { companies } = props;

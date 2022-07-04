@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
-import { ICompany } from './CompanyItem';
+import { ICompany } from './model';
 
 const url = "https://feinterviewtask.azurewebsites.net/b/6231abada703bb67492d2b8f";
 

@@ -1,6 +1,4 @@
-import React from 'react';
-import {  ICompanyAddress } from './CompanyItem';
-// import './App.css';
+import {  ICompanyAddress } from './model';
 
 function CompanyAddress(props: {address: ICompanyAddress}) {
   const { address } = props;
