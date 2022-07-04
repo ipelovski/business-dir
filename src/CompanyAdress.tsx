@@ -5,10 +5,10 @@ import {  ICompanyAddress } from './CompanyItem';
 function CompanyAddress(props: {address: ICompanyAddress}) {
   const { address } = props;
   return (
-    <div className="">
-      <span>{address.number}</span>&nbsp;<span>{address.street}</span>
+    <div>
+      <span>{address.number}</span> <span>{address.street}</span>
       <br />
-      <span>{address.city}</span>,&nbsp;<span>{address.country}</span>&nbsp;<span>{address.zip}</span>
+      <span>{address.city}</span>, <span>{address.country}</span> <span>{address.zip}</span>
     </div>
   );
 }

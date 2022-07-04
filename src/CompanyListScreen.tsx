@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import CompanyList from './CompanyList';
 
 function CompanyListScreen() {

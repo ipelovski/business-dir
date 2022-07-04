@@ -1,25 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ICompany } from './CompanyItem';
-// import './App.css';
 
 function NearbyCompanies(props: { companies: ICompany[] }) {
   const { companies } = props;
   return (
-    <ul className="">
+    <div className="nearby-places-grid">
       {companies.map(company => {
         const address = company.address;
         return (
-          <li key={company.id} className="">
-            <Link to={"/company/" + company.id}>{company.name}</Link>
-            <span>{address.number}</span>&nbsp;
-            <span>{address.street}</span>&nbsp;
-            <span>{address.city}</span>&nbsp;
-            <span>{address.zip}</span>
-          </li>
+          <React.Fragment key={company.id}>
+            <div className='column-name'>
+              <Link to={"/company/" + company.id}>{company.name}</Link>
+            </div>
+            <div>
+              <span>{address.number}</span>
+              <span>{address.street}</span>
+              <span>{address.city}</span>
+              <span>{address.zip}</span>
+            </div>
+          </React.Fragment>
         )
       })}
-    </ul>
+    </div>
   );
 }
 

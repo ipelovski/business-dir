@@ -5,7 +5,9 @@ import {  ICompany } from './CompanyItem';
 function CompanyContact(props: {company: ICompany}) {
   const { company } = props;
   return (
-    <div className="">
+    <div className="company-contact">
+      <span>{company.name}</span>
+      <br />
       <span>{company.phone}</span>
       <br />
       <span>{company.email}</span>

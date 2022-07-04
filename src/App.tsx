@@ -6,11 +6,13 @@ import CompanyListScreen from './CompanyListScreen';
 import CompanyDetailsScreen from './CompanyDetailsScreen';
 import NoMatch from './NoMatch';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import Header from './Header';
 
 function App() {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
+      <Header />
       <HashRouter basename="/">
         <Routes>
           <Route path="/" element={<CompanyListScreen />} />

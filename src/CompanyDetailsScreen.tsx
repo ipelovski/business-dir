@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom';
 import CompanyDetails from './CompanyDetails';
 import { getCompanies } from './CompanyList';
 import CompanyMissing from './CompanyMissing';
-// import './App.css';
 
 function CompanyDetailsScreen() {
   const { id } = useParams();
-  // const company: Company = {id: '1', name: '', description:''}
-  const { status, data, error } = useQuery('companies', getCompanies);
+  const { status, data, error } = useQuery('companies', getCompanies, {
+    staleTime: 120 * 1000,
+  });
   if (status === "loading") {
     return (
       <div>Loading</div>
