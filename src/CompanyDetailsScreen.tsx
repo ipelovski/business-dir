@@ -1,8 +1,8 @@
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import CompanyDetails from './CompanyDetails';
-import { getCompanies } from './CompanyList';
 import CompanyMissing from './CompanyMissing';
+import { getCompanies } from './model';
 
 function CompanyDetailsScreen() {
   const { id } = useParams();
